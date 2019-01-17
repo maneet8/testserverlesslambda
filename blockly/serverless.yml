@@ -42,9 +42,9 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-environment:
-   SAM_ACCESS_KEY_ID: 47c4303f88e0496fa931664402783279
-   SAM_SECRET_ACCESS_KEY: 6gTZa4XLpuTgqvOeQxEYi9r3qxmsm/dY3rvd2U66iC8=
+  environment:
+    SAM_ACCESS_KEY_ID: 47c4303f88e0496fa931664402783279
+    SAM_SECRET_ACCESS_KEY: 6gTZa4XLpuTgqvOeQxEYi9r3qxmsm/dY3rvd2U66iC8=
 
 # you can add packaging information here
 #package:
