@@ -9,7 +9,6 @@ const argv = minimist(process.argv.slice(2), {
     }
 });
 
-
 fs.readFile('test.js', 'utf8', function(err1, data1) {
     if (err1) {
         return console.log(err1);
@@ -20,7 +19,7 @@ fs.readFile('test.js', 'utf8', function(err1, data1) {
         if (err) {
             return console.log(err);
         }
-        var result = data.replace(/#TOBEREPLACEDWITHCODE/g, data1);
+        var result = data.replace(/#TOBEREPLACEDWITHCODE/g, data1).replace(/hello/g, argv.name);
 
         fs.writeFile('handler.js', result, 'utf8', function(err) {
             if (err) return console.log(err);
