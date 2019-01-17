@@ -1,16 +1,14 @@
 'use strict';
+var EnsSdk = require('ens-sdk');
+// var ensHandler = require();
+var eventTopicId = 'a8f7aacf-0c19-44da-8494-27b6c80b27a2';
 
-module.exports.hello = async (event, context) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event,
-    }),
+var event = new EnsSdk.PublishEventBody();
+var apiInstance = new EnsSdk.EventApi();
+module.exports.workflow1 = function(event, context, callback) {
 
-    #TOBEREPLACEDWITHCODE
-  };
-
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
+  #TOBEREPLACEDWITHCODE
 };
+
+// Use this code if you don't use the http event with the LAMBDA-PROXY integration
+// return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
