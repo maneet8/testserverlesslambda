@@ -5,7 +5,7 @@ var eventTopicId = 'a8f7aacf-0c19-44da-8494-27b6c80b27a2';
 
 var event = new EnsSdk.PublishEventBody();
 var apiInstance = new EnsSdk.EventApi();
-module.exports.workflow1 = function(event, context, callback) {
+module.exports.hello = function(event, context, callback) {
 
   #TOBEREPLACEDWITHCODE
 };
